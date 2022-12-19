@@ -1,20 +1,23 @@
-/*color theme*/
+/*Color Theme*/
 :root {
     --teal: #317773;
     --pink: #FBEAEB;
     --forestgreen: #3a6b35;
 }
 
+/*Set root font size to 10px*/
 html {
     font-size: 62.5%;
 }
 
+/*General Styles*/
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: var(--forestgreen);
     margin: 0;
 }
 
+/*Header and Navigation Bar*/
 header {
     display: flex;
     flex-direction: row;
@@ -48,13 +51,14 @@ h1 {
     text-decoration: none;
 }
 
-
+/*Hover over nav items so background turns from green to pink and font change from pink to green*/
 #navigation a:hover {
     background-color: var(--pink);
     color: var(--teal);
     transition: all 0.5s ease-out;
 }
 
+/*hero banner*/
 #hero {
     background-image: url(02-hero-bg.jpg);
     height: 200px;
@@ -75,6 +79,7 @@ h1 {
     padding: 10px;
 }
 
+/*general styles for main section*/
 .sectionHeading {
     font-size: 4rem;
     text-align: right;
@@ -89,6 +94,7 @@ h1 {
     width: 75%;
 }
 
+/*About Me Section*/
 #aboutMeInfo {
     font-size: 1.4rem;
 }
@@ -98,17 +104,8 @@ h1 {
     flex-direction: row;
 }
 
+/*Work Section*/
 #Work {
-    display: flex;
-    flex-direction: row;
-}
-
-#contactMe {
-    display: flex;
-    flex-direction: row;
-}
-
-#Resume {
     display: flex;
     flex-direction: row;
 }
@@ -158,9 +155,11 @@ h1 {
     position: relative;
     margin: 5px;
     border: 5px solid var(--teal);
+/*Hover over grid items so cursor changes to grab icon*/
     cursor: grab;
 }
 
+/*Hover over grid items so border disappears*/
 .heroGridArea:hover {
     border: none;
 }
@@ -180,6 +179,12 @@ h1 {
     text-decoration: none;
 }
 
+/*Contact Me Section*/
+#contactMe {
+    display: flex;
+    flex-direction: row;
+}
+
 #contactSection {
     display: flex;
     flex-direction: row;
@@ -194,6 +199,7 @@ h1 {
     padding: 10px;
 }
 
+/*Hover over contact items so background turns from green to pink and font change from pink to green*/
 #contactSection p:hover {
     background-color: var(--forestgreen);
     color: var(--pink);
@@ -209,6 +215,12 @@ h1 {
     background-color: var(--forestgreen);
     color: var(--pink);
     transition: all 0.5s ease-out;
+}
+
+/*Resume Section*/
+#Resume {
+    display: flex;
+    flex-direction: row;
 }
 
 #resumeSection {
@@ -227,12 +239,14 @@ h1 {
     color: var(--forestgreen);
 }
 
+/*Hover over resume link so background turns from green to pink and font change from pink to green*/
 #resumeSection a:hover {
     background-color: var(--forestgreen);
     color: var(--pink);
     transition: all 0.5s ease-out;
 }
 
+/*At screen size under 1000px, removes nav items and changes display of Work and Contact Me sections*/
 @media only screen and (max-width: 1000px) {
     #navigation {
         display: none;
@@ -255,7 +269,7 @@ h1 {
     }
 }
 
-
+/*At screen size under 800px, changes display of main section*/
 @media only screen and (max-width: 800px) {
 
     .sectionHeading {
