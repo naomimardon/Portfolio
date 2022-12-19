@@ -107,3 +107,62 @@ h1 {
     display: flex;
     flex-direction: row;
 }
+
+#heroGrid {
+    display: grid;
+    grid-template-rows: 200px 200px 200px 200px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+    "Project1 Project1"
+    "Project1 Project1"
+    "Project2 Project3"
+    "Project4 Project5"
+}
+
+#Project1 {
+    grid-area: Project1;
+    background-image: url(02-portfolio-1.jpg);
+}
+
+#Project2 {
+    grid-area: Project2;
+    background-image: url(02-portfolio-2.jpg);
+}
+
+#Project3 {
+    grid-area: Project3;
+    background-image: url(02-portfolio-3.jpg);
+}
+
+#Project4 {
+    grid-area: Project4;
+    background-image: url(02-portfolio-4.jpg);
+}
+
+#Project5 {
+    grid-area: Project5;
+    background-image: url(02-run-buddy.jpg);
+}
+
+.heroGridArea {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    display: flex;
+    position: relative;
+    margin: 5px;
+    border: 5px solid var(--teal);
+    cursor: grab;
+}
+
+.heroGridArea:hover {
+    border: none;
+}
+
+.workHeading {
+    font-size: 3rem;
+    color: var(--teal);
+    background-color: var(--pink);
+    padding: 10px 10px 10px 5px;
+}
