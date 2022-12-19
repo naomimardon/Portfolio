@@ -69,3 +69,41 @@ h1 {
     height: 3rem;
     padding: 10px;
 }
+
+.sectionHeading {
+    font-size: 4rem;
+    text-align: right;
+    padding: 0 2% 0 10%;
+    width: 200px;
+}
+
+.contentSection {
+    padding: 10px 50px 10px 10px;
+    margin: 10px;
+    border-left: 5px solid var(--forestgreen);
+    width: 75%;
+}
+
+#aboutMeInfo {
+    font-size: 1.4rem;
+}
+
+#aboutMe {
+    display: flex;
+    flex-direction: row;
+}
+
+#Work {
+    display: flex;
+    flex-direction: row;
+}
+
+#contactMe {
+    display: flex;
+    flex-direction: row;
+}
+
+#Resume {
+    display: flex;
+    flex-direction: row;
+}
