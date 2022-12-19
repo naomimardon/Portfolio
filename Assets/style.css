@@ -14,10 +14,11 @@ body {
     color: var(--forestgreen);
     margin: 0;
 }
+
 header {
     display: flex;
     flex-direction: row;
-    justify-content:space-between;
+    justify-content: space-between;
     align-items: center;
     background-color: var(--teal);
     padding: 15px 30px 15px 0;
@@ -29,23 +30,26 @@ h1 {
     background-color: var(--pink);
     color: var(--teal);
     font-size: 4rem;
-    padding: 15px 20px 15px 100px; 
+    padding: 15px 20px 15px 100px;
     margin: 0;
 }
+
 #navigation {
     display: flex;
     justify-content: space-between;
 }
 
-#navigation p {
+#navigation a {
     color: var(--pink);
     font-size: 1.8rem;
     border-bottom: 3px solid var(--pink);
     padding: 5px 5px;
     margin: 0px 10px;
+    text-decoration: none;
 }
 
-#navigation p:hover {
+
+#navigation a:hover {
     background-color: var(--pink);
     color: var(--teal);
     transition: all 0.5s ease-out;
@@ -62,6 +66,7 @@ h1 {
     align-items: flex-end;
     padding: 0 5% 0 0;
 }
+
 #hero h2 {
     background-color: var(--pink);
     color: var(--teal);
@@ -113,10 +118,10 @@ h1 {
     grid-template-rows: 200px 200px 200px 200px;
     grid-template-columns: 1fr 1fr;
     grid-template-areas:
-    "Project1 Project1"
-    "Project1 Project1"
-    "Project2 Project3"
-    "Project4 Project5"
+        "Project1 Project1"
+        "Project1 Project1"
+        "Project2 Project3"
+        "Project4 Project5"
 }
 
 #Project1 {
@@ -226,4 +231,64 @@ h1 {
     background-color: var(--forestgreen);
     color: var(--pink);
     transition: all 0.5s ease-out;
+}
+
+@media only screen and (max-width: 1000px) {
+    #navigation {
+        display: none;
+    }
+    #heroGrid {
+        display: grid;
+        grid-template-rows: 200px 200px 200px 200px 200px 200px;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "Project1"
+            "Project1"
+            "Project2"
+            "Project3"
+            "Project4"
+            "Project5"
+    }
+    #contactSection {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+@media only screen and (max-width: 800px) {
+
+    .sectionHeading {
+        display: block;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .workHeading {
+        line-height: 2;
+    }
+
+    #aboutMe {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #Work {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #contactMe {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #Resume {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
